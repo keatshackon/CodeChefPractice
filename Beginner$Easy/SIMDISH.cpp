@@ -25,7 +25,7 @@ int main()
 
 		int cnt=0;
 		for(int i=0;i<4;i++){
-			for(int j=0;j<4;j++){
+			for(int j=0;jcd <4;j++){
 				if(v1[i] == v2[j]){
 					cnt++;
 				}
