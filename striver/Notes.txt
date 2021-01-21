@@ -1,0 +1,6 @@
+							Notes
+============================================================
+
+1>> you can use this "or"  and "and" as comparision operator
+
+2>> 
