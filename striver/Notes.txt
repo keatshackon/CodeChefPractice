@@ -3,4 +3,6 @@
 
 1>> you can use this "or"  and "and" as comparision operator
 
-2>> 
+2>> To Calculate The Power Set Use 2^n, Where n Is Number Of Element In Given Set!
+
+3>> 
