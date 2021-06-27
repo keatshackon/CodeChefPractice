@@ -27,32 +27,32 @@ int main() {
     
     ll q,x,y,z,i,j,k,l,m,t,r,d,n;
 
-	cin>>t;
+	//cin>>t;
+    t = 153;
     q = t;
-    l = t;
-    int cnt = 0;
-	while(t--){
-	    t/=10;
-        cnt++;
-	}
+
+    int cnt = log10(t) + 1;
+    int s = 0;
+
     // cout<<cnt<<"\n";
 
-    ll sum = 0;
-    k = 1;
-    while(q){
-        int r = q % 10;
-        k=1;
-        for(int i=1;i<=cnt;i++){
-            k = k * r;
-        }
-        sum = sum +  k;
-        q /= 10;
-    }
+    while(t){
+        cout<<t<<"\n";
+        unsigned int r = t % 10;
+        unsigned int  k = pow(r,cnt);
+        cout<<r<<" "<<k<<"\n";
+        s+=k;
+        
 
-    if(sum == l){
-        cout<<"YES\n";
+        t/=10;
+    }
+	
+    cout<<s<<"\n";
+
+    if(s == q){
+        cout<<"Yes\n";
     }else{
-        cout<<"NO\n";
+        cout<<"No\n";
     }
 	
 	
